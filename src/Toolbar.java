@@ -13,6 +13,7 @@ public class Toolbar {
     private JButton solve;
     private JSlider speed;
     private JTextField dimension;
+    private JLabel dimensionLabel;
 
     // Dependencies
     private Board board;
@@ -37,6 +38,9 @@ public class Toolbar {
         speed.setPaintLabels(true);
 
         dimension = new JTextField(4);
+        dimension.setText("10");
+        dimensionLabel = new JLabel("Dimension");
+
         toolBar = new JToolBar();
 
         eventListener();
@@ -49,6 +53,9 @@ public class Toolbar {
         toolBar.add(generate);
         toolBar.add(solve);
         toolBar.add(speed);
+        toolBar.addSeparator();
+        toolBar.add(dimensionLabel);
+        toolBar.addSeparator();
         toolBar.add(dimension);
         toolBar.setFloatable(false);
         toolBar.setOpaque(true);
@@ -92,6 +99,8 @@ public class Toolbar {
                                     } catch (Exception e) {
                                         board.maxSize = 10;
                                     }
+
+                                    System.out.println(board.maxSize);
                                     
                                     board.startGeneration();
                                 }

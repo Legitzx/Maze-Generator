@@ -23,6 +23,7 @@ public class Maze extends JFrame {
         setResizable(false);
         setVisible(true);
 
+        board.startGeneration();
     }
 
     public static void main(String[] args) {

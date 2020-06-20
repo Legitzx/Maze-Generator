@@ -3,7 +3,7 @@ public class Cell {
     private int x;
     private int y;
 
-    // determines if left/right/top/bottom is a border
+    // determines if left/right/top/bottom is a border - (Maybe) Used for solver   ->  not yet implemented
     private boolean left;
     private boolean right;
     private boolean top;
