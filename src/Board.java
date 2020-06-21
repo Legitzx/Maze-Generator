@@ -3,9 +3,9 @@ import java.awt.*;
 
 public class Board extends JComponent {
     // maxSize x maxSize (Example: 10x10)
-    public static int maxSize = 10;
-    private static boolean active;
-    public static int delay = 80000000;
+    public int maxSize = 10;
+    private boolean active;
+    public int delay = 80000000;
 
     private CellManager manager;
 

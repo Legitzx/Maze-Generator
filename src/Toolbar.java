@@ -78,7 +78,7 @@ public class Toolbar {
             @Override
             public void stateChanged(ChangeEvent e) {
                 JSlider source = (JSlider) e.getSource();
-                Board.delay = source.getValue();
+                board.delay = source.getValue();
             }
         });
 
@@ -100,8 +100,6 @@ public class Toolbar {
                                         board.maxSize = 10;
                                     }
 
-                                    System.out.println(board.maxSize);
-                                    
                                     board.startGeneration();
                                 }
                             }
