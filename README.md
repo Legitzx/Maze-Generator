@@ -1,3 +1,3 @@
-# Maze-Generator-and-Solver
-Java Swing Maze Generator and Solver
+# Maze-Generator
+Java Swing Maze Generator
  - Generates Mazes using Depth-first search
